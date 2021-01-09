@@ -147,6 +147,10 @@ int main(int argc, char** argv) {
     printf("---- END RESULTS ----\n");
   }
 
+  free_matrix(C);
+  free_matrix(B);
+  free_matrix(A);
+
   if (show_usec) {
     double elapsed = tdiff(time1, time2);
     printf("Elapsed execution time: %f usec\n",
