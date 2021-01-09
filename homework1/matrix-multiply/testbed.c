@@ -96,6 +96,12 @@ int main(int argc, char** argv) {
   B = make_matrix(kMatrixSize, kMatrixSize);
   C = make_matrix(kMatrixSize, kMatrixSize);
 
+  for (int i = 0; i < C->rows; i++) {
+    for (int j = 0; j < C->cols; j++) {
+      C->values[i][j] = 0;
+    }
+  }
+  
   if (use_zero_matrix) {
     for (int i = 0; i < A->rows; i++) {
       for (int j = 0; j < A->cols; j++) {
