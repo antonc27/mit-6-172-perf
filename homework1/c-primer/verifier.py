@@ -34,7 +34,7 @@ def runAndCheckSizes():
         ( "uint32_t", 4 ),
         ( "uint64_t", 8 ),
         ( "uint_fast8_t", 1 ),
-        ( "uint_fast16_t", 2 ),
+        ( "uint_fast16_t", 8 ),
         ( "uintmax_t", 8 ),
         ( "intmax_t", 8 ),
         ( "__int128", 16 ),
